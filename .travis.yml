@@ -5,5 +5,7 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  - pip install pep8 flake8
+  - pip list
 script:
-  - python app.py
+  - flake8 .
